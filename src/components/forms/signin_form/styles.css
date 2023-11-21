@@ -1,0 +1,32 @@
+.signInContainer {
+	position: absolute;
+	z-index: 2;
+	display: flex;
+	width: 100%;
+	max-width: 360px;
+	margin: 0 auto;
+	flex-direction: column;
+	transition: all 0.2s 0.7s;
+	justify-content: center;
+	align-items: center;
+}
+
+form.signInForm {
+	background: var(--prim-bg-color);
+	box-shadow: var(--box-shadow-md);
+	width: 100%;
+	border-radius: 5px;
+	padding: 1.2em 1.5em 1.5em 1.5em;
+}
+
+.signUpMode .signInContainer {
+	opacity: 0;
+	z-index: 0;
+}
+
+@media screen and (max-width: 870px){
+	.signInContainer {
+		top: 22%;
+	}
+
+}

@@ -1,0 +1,36 @@
+.primary{
+	cursor: pointer;
+	background: transparent;
+	text-decoration: none;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	color: #fff;
+	background: var(--left-linear-gradient);
+	padding: 10px 20px;
+	border: 0px;
+	border-radius: 20px;
+	margin-bottom: 0.3em;
+	font-size: 12px;
+	line-height: 19px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	letter-spacing: 3px;
+}
+
+.secondary{
+	background: var(--right-linear-gradient);
+	width: max-content;
+}
+
+.secondary button{
+	background: #fff;
+	cursor: pointer;
+	text-decoration: none;
+	border: 0px;
+	padding: 8px 18px;
+	margin: 2.5px;
+	font-size: 14px;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 1px;
+	color: black;
+}

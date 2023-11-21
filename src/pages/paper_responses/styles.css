@@ -1,0 +1,117 @@
+.responses {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	margin: 0 auto;
+	margin-top: 5rem;
+	padding-top: 1rem;
+	color: black;
+	background: var(--prim-bg-color);
+	box-shadow: var(--box-shadow-md);
+	width: 90%;
+	max-width: 900px;
+	border-radius: 8px;
+}
+
+.responses span {
+	text-align: center;
+	align-self: center;
+}
+
+.response {
+	width: 100%;
+	padding: 0 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0.3em 0;
+}
+
+.responsesContent {
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-auto-flow: column;
+	margin: 0.7rem auto;
+	width: 100%;
+}
+
+.responsesContent span {
+	text-align: center;
+	align-content: center;
+	margin: 0 7px;
+}
+
+.responsesContent span:nth-child(3){
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+
+.responseColNames {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-auto-flow: column;
+	padding: 0 1em;
+}
+
+.responsesTitle span {
+	margin: 1em 1em;
+	text-align: center;
+}
+
+.smallScreen{
+	display: none;
+}
+
+@media screen and (max-width: 800px) {
+	.responses {
+		width: 95%;
+	}
+	.responseColNames span {
+		margin: 1em 0.7em;
+	}
+	.responseColNames {
+		padding: 0 0.5em;
+		margin-left: -1.5em;
+		width: 95%;
+	}
+	.response {
+		padding-right: 0.5em;
+		padding-left: 0.5em;
+		margin-left: -1.5em;
+		width: 95%;
+	}
+}
+
+@media screen and (max-width: 562px) {
+	.responseColNames span {
+		margin: 0.8em 0.5em;
+	}
+
+	.responseColNames {
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.response {
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.smallScreen{
+		display: block;
+	}
+
+	.smallScreen button{
+		padding: 8px 12px;
+	}
+
+	.largeScreen{
+		display: none;
+	}
+}
