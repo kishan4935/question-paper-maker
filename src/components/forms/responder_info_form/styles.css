@@ -1,0 +1,21 @@
+.responderInfoForm {
+	background: var(--prim-bg-color);
+	box-shadow: var(--box-shadow-md);
+	color: black;
+	border-radius: 8px;
+	padding: 1em;
+	margin-top: 1.5rem;
+	margin-bottom: 2rem;
+	width: 320px;
+}
+
+.responderInfoForm p {
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+
+@media screen and (max-width: 340px) {
+	.responderInfoForm {
+		width: 95%;
+	}
+}

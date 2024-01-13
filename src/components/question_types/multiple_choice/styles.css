@@ -1,0 +1,24 @@
+
+.question {
+  border-radius: 8px;
+  padding: 0.5em 1em;
+  width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.question > button {
+  display: none;
+}
+
+.question p,
+.question span .question input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .question {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}

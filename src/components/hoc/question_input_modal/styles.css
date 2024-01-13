@@ -1,0 +1,36 @@
+
+.modal {
+    position: fixed;
+    visibility: hidden;
+    z-index: 500;
+    background-color: var(--modal-bg-color);
+    width: 380px;
+    max-height: 70vh;
+    border: 0px;
+    box-shadow: var(--box-shadow-lg);
+    padding: 15px 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25%;
+    border-radius: 0.5rem;
+    overflow-wrap: anywhere;
+    overflow: auto;
+    scroll-behavior: smooth;
+    opacity: 0;
+    transform-origin: left center;
+    transition: opacity,visibility ease-in-out;
+    transition-duration: 0s;
+}
+
+.show{
+    transition-duration: 0.6s;
+    visibility: inherit;
+    opacity: 1;
+}
+
+         
+@media (max-width: 420px) {
+    .modal {
+        width: 92%;
+    }
+}

@@ -1,0 +1,38 @@
+.iconsWrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+
+.option {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 0.5em 0;
+}
+
+.editIcon {
+	cursor: pointer;
+	width: 26px;
+	height: 40px;
+}
+
+.deleteIcon {
+	cursor: pointer;
+	width: 29px;
+	height: 40px;
+	margin-left: 0.3em;
+}
+
+@media screen and (max-width: 450px) {
+	.deleteIcon {
+		margin-left: 0.1em;
+		height: 35px;
+	}
+
+	.editIcon{
+		height: 35px;
+	}
+}
